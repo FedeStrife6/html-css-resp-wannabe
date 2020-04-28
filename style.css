@@ -75,21 +75,43 @@ img {
 /* MEDIA QUERY */
 @media screen and (max-width: 419px) {
   .row {
-  width: 100%;
-  margin: 50px auto 0;
+    width: 100%;
+    margin: 50px auto 0;
   }
-#lezioni .row>.left,
-#lezioni .row>.right {
-  float: none;
-  width: 100%;
-  margin-bottom: 10px;
-  background-color: orange;
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #769c6a;
+  }
+  .left img,
+  .right img {
+    width: 150px;
+    height: auto;
+  }
 }
-.left.right img {
-  width: 50%;
-  height: 50%;
 
+@media screen and (min-width: 420px) and (max-width: 820px) {
+  .row {
+    width: 100%;
+    margin: 50px auto 0;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #c3cebf;
+  }
 }
 
-}
+
+
 /* FINE MEDIA QUERY */
